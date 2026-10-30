@@ -1,0 +1,299 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface": "#0f131c", "secondary": "#c0c1ff", "primary-fixed": "#acedff", "surface-container-lowest": "#0a0e17", "surface-dim": "#0f131c", "outline-variant": "#3d494c", "inverse-on-surface": "#2c303a", "on-secondary-fixed-variant": "#2f2ebe", "tertiary-fixed": "#e9ddff", "outline": "#869397", "on-primary": "#003640", "on-secondary-fixed": "#07006c", "surface-container": "#1c1f29", "on-error-container": "#ffdad6", "secondary-fixed-dim": "#c0c1ff", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#5516be", "secondary-fixed": "#e1e0ff", "tertiary-fixed-dim": "#d0bcff", "surface-container-highest": "#31353f", "error-container": "#93000a", "primary-fixed-dim": "#4cd7f6", "tertiary-container": "#b395ff", "on-primary-fixed": "#001f26", "on-tertiary-container": "#4900ae", "primary": "#4cd7f6", "surface-variant": "#31353f", "inverse-primary": "#00687a", "on-secondary-container": "#b0b2ff", "on-surface": "#dfe2ef", "secondary-container": "#3131c0", "background": "#0f131c", "tertiary": "#d0bcff", "on-error": "#690005", "on-tertiary": "#3c0091", "on-tertiary-fixed": "#23005c", "primary-container": "#06b6d4", "surface-container-high": "#262a34", "on-primary-container": "#00424f", "on-background": "#dfe2ef", "inverse-surface": "#dfe2ef", "surface-bright": "#353943", "on-primary-fixed-variant": "#004e5c", "surface-container-low": "#181b25", "on-surface-variant": "#bcc9cd", "on-secondary": "#1000a9", "surface-tint": "#4cd7f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "space-lg": "1.5rem" }, fontFamily: { "headline-sm": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "label-lg": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "display-lg-mobile": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "label-md": ["JetBrains Mono"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Space Grotesk"] }, fontSize: { "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0f131c;color:#dfe2ef;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-[0_0_12px_-2px_rgba(76,215,246,0.35)]"><span class="material-symbols-outlined text-[20px]">vital_signs</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Timer</span><span class="font-label-sm text-label-sm text-primary flex items-center gap-1 uppercase"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>PulseSync 120Hz</span></div></div><div class="flex items-center gap-space-sm"><div class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">schedule</span><span id="shell-clock" class="">19:48</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(76,215,246,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 px-margin-mobile bg-surface"><div class="flex flex-col w-full gap-space-md">
+<!-- Sub-tab Navigation (Suite Mode Selector) -->
+<div class="w-full bg-surface-container-lowest p-1 rounded-full flex items-center justify-between shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)]">
+<button class="flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface" type="button">
+     Timer
+    </button>
+<button class="flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface" type="button">
+     Stopwatch
+    </button>
+<button class="flex-1 py-1.5 px-3 rounded-full text-center font-label-md text-label-md bg-surface-container-high text-primary font-semibold shadow-[0_0_16px_rgba(76,215,246,0.25)] flex items-center justify-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+     World Clock
+    </button>
+</div>
+<!-- Primary Reference / Home City Card (San Francisco) -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md relative overflow-hidden shadow-xl">
+<!-- Optical Scrim Gradient -->
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-36 h-36 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<!-- Status Badge & Metas -->
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_#4cd7f6]"></span>
+<span class="">LOCAL REFERENCE (HOME)</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">my_location</span>
+<span class="">GPS SYNCED</span>
+</div>
+</div>
+<!-- City & Timezone Designation -->
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">San Francisco, USA</span>
+<span class="font-label-md text-label-md text-on-surface-variant">PDT • UTC-07:00</span>
+</div>
+<!-- Massive Digital Readout -->
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex items-baseline gap-1.5">
+<span class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tight font-bold drop-shadow-[0_0_20px_rgba(76,215,246,0.35)]" id="home-clock-time">07:14</span>
+<span class="font-label-lg text-label-lg text-primary/70 font-semibold">:38</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase ml-1">AM</span>
+</div>
+<div class="text-right">
+<div class="font-label-md text-label-md text-on-surface font-semibold">Thu, Oct 24</div>
+<div class="font-label-sm text-label-sm text-primary/80">DAY 297 OF 366</div>
+</div>
+</div>
+<!-- Daylight Arc Visualization & Sun Telemetry -->
+<div class="mt-2 pt-space-sm bg-surface-container rounded-lg p-3">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pb-2">
+<span class="flex items-center gap-1 text-amber-300">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+          Dawn 07:22 AM
+        </span>
+<span class="text-primary font-medium tracking-wide">10h 56m remaining</span>
+<span class="flex items-center gap-1 text-purple-300">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+          Dusk 06:18 PM
+        </span>
+</div>
+<!-- Custom SVG Arc / Timeline Tracker -->
+<div class="relative w-full h-3 bg-surface-container-lowest rounded-full overflow-hidden">
+<!-- Solar progress fill -->
+<div class="absolute left-0 top-0 bottom-0 w-[42%] bg-gradient-to-r from-amber-400 via-primary to-secondary rounded-full"></div>
+<!-- Sun Position Reticle -->
+<div class="absolute top-1/2 left-[42%] -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-primary-fixed flex items-center justify-center shadow-[0_0_10px_#4cd7f6]">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm pt-1.5">
+<span class="">Midnight</span>
+<span class="text-on-surface-variant/80">Solar Zenith (12:50 PM)</span>
+<span class="">Midnight</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Global Daylight & Terminus Visualizer Card -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">public</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Daylight Ribbon</span>
+</div>
+<div class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-mono">
+      UTC 14:14:38
+    </div>
+</div>
+<!-- Stylized 24h Solar Band Matrix -->
+<div class="relative w-full rounded-lg bg-surface-container-lowest overflow-hidden p-3 flex flex-col gap-2">
+<!-- 24-Hour Horizon Track -->
+<div class="relative w-full h-10 rounded-md overflow-hidden flex items-center shadow-inner">
+<!-- Night Zone Left -->
+<div class="w-[28%] h-full bg-gradient-to-r from-surface-dim to-indigo-950/70 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary/40 text-[18px]">nights_stay</span>
+</div>
+<!-- Golden Daylight Band -->
+<div class="w-[48%] h-full bg-gradient-to-r from-amber-500/30 via-primary/40 to-amber-500/25 flex items-center justify-around px-2">
+<span class="font-label-sm text-label-sm text-amber-200/90 font-mono tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-amber-300">wb_sunny</span> SOLAR NOON
+         </span>
+<span class="material-symbols-outlined text-primary text-[16px] animate-pulse">flare</span>
+</div>
+<!-- Night Zone Right -->
+<div class="w-[24%] h-full bg-gradient-to-r from-indigo-950/70 to-surface-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary/40 text-[18px]">dark_mode</span>
+</div>
+<!-- UTC Current Line Pin -->
+<div class="absolute top-0 bottom-0 left-[59%] w-0.5 bg-primary shadow-[0_0_8px_#4cd7f6] z-10 flex flex-col items-center justify-between py-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary -mt-0.5"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary -mb-0.5"></span>
+</div>
+</div>
+<!-- Timezone markers ruler -->
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant font-mono px-1">
+<span class="">-12h</span>
+<span class="">-6h (SFO)</span>
+<span class="text-primary font-bold">0h (UTC)</span>
+<span class="">+6h</span>
+<span class="">+9h (TYO)</span>
+<span class="">+12h</span>
+</div>
+</div>
+</div>
+
+<!-- Timezone-Linked Alarms Section -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">alarm_smart_wake</span>
+<div><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Timezone-Linked Alarms</span></div>
+</div>
+<div class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold shadow-[0_0_8px_#4cd7f6]">2 ACTIVE</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Alarms trigger based on the remote city's native clock with automatic daylight savings &amp; home translation.</div>
+<div class="flex flex-col gap-2.5 pt-1">
+<div class="p-3 rounded-xl bg-surface-container-lowest border border-primary/20 flex flex-col gap-2 shadow-sm">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2"><span class="font-label-lg text-label-lg text-on-surface font-bold">Tokyo Standup &amp; Handover</span><span class="px-1.5 py-0.2 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm">Tokyo (JST)</span></div>
+<div class="flex items-baseline gap-1.5 pt-0.5"><span class="font-headline-md text-headline-md text-primary font-bold">09:30</span><span class="font-label-md text-label-md text-primary/70 font-semibold">AM JST</span></div>
+</div>
+<div class="w-10 h-6 rounded-full bg-primary/20 p-1 flex items-center justify-end cursor-pointer shadow-[0_0_10px_#4cd7f6]"><span class="w-4 h-4 rounded-full bg-primary"></span></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">sync_alt</span>Local: 17:30 PDT (Previous day)</span>
+<div class="flex items-center gap-1.5"><span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[10px]">Mon–Fri</span><span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[10px] text-amber-300 flex items-center gap-0.5"><span class="material-symbols-outlined text-[10px]">volume_up</span>Pulse</span></div>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest border border-primary/20 flex flex-col gap-2 shadow-sm">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2"><span class="font-label-lg text-label-lg text-on-surface font-bold">London Market Close</span><span class="px-1.5 py-0.2 rounded bg-primary/20 text-primary font-label-sm text-label-sm">London (BST)</span></div>
+<div class="flex items-baseline gap-1.5 pt-0.5"><span class="font-headline-md text-headline-md text-primary font-bold">16:30</span><span class="font-label-md text-label-md text-primary/70 font-semibold">BST</span></div>
+</div>
+<div class="w-10 h-6 rounded-full bg-primary/20 p-1 flex items-center justify-end cursor-pointer shadow-[0_0_10px_#4cd7f6]"><span class="w-4 h-4 rounded-full bg-primary"></span></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">sync_alt</span>Local: 08:30 PDT (Same day)</span>
+<div class="flex items-center gap-1.5"><span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[10px]">Daily</span><span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-[10px] text-amber-300 flex items-center gap-0.5"><span class="material-symbols-outlined text-[10px]">volume_up</span>Chime</span></div>
+</div>
+</div>
+</div>
+<button type="button" class="w-full py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 border border-primary/20 shadow-[0_0_12px_rgba(76,215,246,0.15)] transition-all"><span class="material-symbols-outlined text-[18px]">add_alarm</span><span class="">+ Add World Clock Alarm</span></button>
+</div>
+
+<!-- Pinned World Clocks Section -->
+<div class="flex flex-col gap-space-sm w-full">
+<!-- Section Title & Add Action -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Observed Nodes</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">4 ACTIVE</span>
+</div>
+<button class="flex items-center gap-1 text-primary hover:text-primary-fixed transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="">Add City</span>
+</button>
+</div>
+<!-- Quick Pill Selector for Quick-Adding Popular Metros -->
+<div class="flex gap-1.5 overflow-x-auto pb-1 no-scrollbar text-on-surface-variant">
+<button class="whitespace-nowrap px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button"> + Tokyo </button>
+<button class="whitespace-nowrap px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button"> + London </button>
+<button class="whitespace-nowrap px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button"> + New York </button>
+<button class="whitespace-nowrap px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button"> + Sydney </button>
+<button class="whitespace-nowrap px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button"> + Berlin </button>
+<button class="whitespace-nowrap px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button"> + Singapore </button>
+</div>
+<!-- City Card 1: Tokyo -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md relative overflow-hidden flex flex-col gap-2.5 shadow-md"><div class="flex items-start justify-between"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tokyo, Japan</span><span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm font-bold">TOMORROW</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">JST • UTC+09:00 (+16 hrs)</span></div><div class="flex items-center gap-2"><div class="text-right flex flex-col items-end"><div class="flex items-baseline gap-1"><span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">23:14</span><span class="font-label-sm text-label-sm text-on-surface-variant">:38</span><span class="font-label-sm text-label-sm text-on-surface-variant font-bold ml-0.5">PM</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Fri, Oct 25</span></div><button type="button" class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shadow-[0_0_8px_#4cd7f6] hover:bg-surface-container-highest transition-colors" title="Timezone Alarm Active"><span class="material-symbols-outlined text-[18px]">alarm_on</span></button></div></div><div class="flex items-center justify-between pt-1"><div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">nights_stay</span><span class="">Night • Resting hours</span></div><div class="font-label-sm text-label-sm text-on-surface-variant">Rise 05:54 AM • Set 16:58 PM</div></div><div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden flex"><div class="w-[88%] bg-surface-container-highest"></div><div class="w-[12%] bg-secondary shadow-[0_0_8px_#c0c1ff]"></div></div><div class="mt-1 p-2 rounded-lg bg-surface-container-lowest/80 border border-primary/20 flex flex-col gap-1.5"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[14px]">notifications_active</span><span class="">Linked Alarm: 09:00 AM JST (Tokyo Market Open)</span></div><div class="w-8 h-4 rounded-full bg-primary/20 p-0.5 flex items-center justify-end cursor-pointer"><span class="w-3 h-3 rounded-full bg-primary shadow-[0_0_6px_#4cd7f6]"></span></div></div><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-primary/70">schedule</span>Auto-synced: 17:00 SF Home (Tomorrow)</span><span class="px-1.5 py-0.2 rounded bg-surface-container-high text-primary font-mono text-[10px]">Digital Pulse</span></div></div></div>
+<!-- City Card 2: London -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md relative overflow-hidden flex flex-col gap-2.5 shadow-md"><div class="flex items-start justify-between"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">London, UK</span><span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm font-bold">TODAY</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">BST • UTC+01:00 (+8 hrs)</span></div><div class="flex items-center gap-2"><div class="text-right flex flex-col items-end"><div class="flex items-baseline gap-1"><span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">15:14</span><span class="font-label-sm text-label-sm text-primary/70">:38</span><span class="font-label-sm text-label-sm text-on-surface-variant font-bold ml-0.5">PM</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Thu, Oct 24</span></div><button type="button" class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shadow-[0_0_8px_#4cd7f6] hover:bg-surface-container-highest transition-colors" title="Timezone Alarm Active"><span class="material-symbols-outlined text-[18px]">alarm_on</span></button></div></div><div class="flex items-center justify-between pt-1"><div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[13px] text-amber-300" style="font-variation-settings: 'FILL' 1;">wb_sunny</span><span class="">Daylight • Business Active</span></div><div class="font-label-sm text-label-sm text-on-surface-variant">Rise 07:41 AM • Set 17:50 PM</div></div><div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden flex"><div class="w-[68%] bg-gradient-to-r from-amber-400 to-primary shadow-[0_0_8px_#4cd7f6]"></div><div class="w-[32%] bg-surface-container-highest"></div></div><div class="mt-1 p-2 rounded-lg bg-surface-container-lowest/80 border border-primary/20 flex flex-col gap-1.5"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[14px]">notifications_active</span><span class="">Linked Alarm: 14:00 BST (Sync Call)</span></div><div class="w-8 h-4 rounded-full bg-primary/20 p-0.5 flex items-center justify-end cursor-pointer"><span class="w-3 h-3 rounded-full bg-primary shadow-[0_0_6px_#4cd7f6]"></span></div></div><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-primary/70">schedule</span>Auto-synced: 06:00 SF Home</span><span class="px-1.5 py-0.2 rounded bg-surface-container-high text-primary font-mono text-[10px]">Echo Chime</span></div></div></div>
+<!-- City Card 3: New York -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md relative overflow-hidden flex flex-col gap-2.5 shadow-md"><div class="flex items-start justify-between"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">New York, USA</span><span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm font-bold">TODAY</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">EDT • UTC-04:00 (+3 hrs)</span></div><div class="flex items-center gap-2"><div class="text-right flex flex-col items-end"><div class="flex items-baseline gap-1"><span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">10:14</span><span class="font-label-sm text-label-sm text-on-surface-variant">:38</span><span class="font-label-sm text-label-sm text-on-surface-variant font-bold ml-0.5">AM</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Thu, Oct 24</span></div><button type="button" class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center hover:text-primary hover:bg-surface-container-highest transition-colors" title="Set Timezone Alarm"><span class="material-symbols-outlined text-[18px]">add_alarm</span></button></div></div><div class="flex items-center justify-between pt-1"><div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[13px] text-amber-300" style="font-variation-settings: 'FILL' 1;">wb_twilight</span><span class="">Daylight • Market Open</span></div><div class="font-label-sm text-label-sm text-on-surface-variant">Rise 07:12 AM • Set 18:04 PM</div></div><div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden flex"><div class="w-[30%] bg-gradient-to-r from-amber-400 to-primary"></div><div class="w-[70%] bg-surface-container-highest"></div></div></div>
+<!-- City Card 4: Sydney -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md relative overflow-hidden flex flex-col gap-2.5 shadow-md"><div class="flex items-start justify-between"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sydney, Australia</span><span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm font-bold">TOMORROW</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">AEST • UTC+10:00 (+17 hrs)</span></div><div class="flex items-center gap-2"><div class="text-right flex flex-col items-end"><div class="flex items-baseline gap-1"><span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">01:14</span><span class="font-label-sm text-label-sm text-on-surface-variant">:38</span><span class="font-label-sm text-label-sm text-on-surface-variant font-bold ml-0.5">AM</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Fri, Oct 25</span></div><button type="button" class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center hover:text-primary hover:bg-surface-container-highest transition-colors" title="Set Timezone Alarm"><span class="material-symbols-outlined text-[18px]">add_alarm</span></button></div></div><div class="flex items-center justify-between pt-1"><div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">bedtime</span><span class="">Deep Night • Sleep Hours</span></div><div class="font-label-sm text-label-sm text-on-surface-variant">Rise 06:08 AM • Set 19:16 PM</div></div><div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden flex"><div class="w-[95%] bg-surface-container-highest"></div><div class="w-[5%] bg-secondary"></div></div></div>
+</div>
+
+</div>
+<script>
+(function() {
+  const slider = document.getElementById('time-slider');
+  const badge = document.getElementById('offset-badge');
+  const resetBtn = document.getElementById('reset-offset');
+
+  const sfoSim = document.getElementById('sfo-sim');
+  const lonSim = document.getElementById('lon-sim');
+  const nycSim = document.getElementById('nyc-sim');
+  const tyoSim = document.getElementById('tyo-sim');
+
+  const sfoTag = document.getElementById('sfo-tag');
+  const lonTag = document.getElementById('lon-tag');
+  const nycTag = document.getElementById('nyc-tag');
+  const tyoTag = document.getElementById('tyo-tag');
+
+  const baseHours = {
+    sfo: 7,
+    lon: 15,
+    nyc: 10,
+    tyo: 23
+  };
+
+  function getStatusTag(hour24) {
+    if (hour24 >= 9 && hour24 <= 17) {
+      return { text: 'Work 9-17', class: 'text-emerald-400' };
+    } else if (hour24 >= 18 && hour24 <= 22) {
+      return { text: 'Evening', class: 'text-amber-300' };
+    } else if (hour24 >= 6 && hour24 < 9) {
+      return { text: 'Waking', class: 'text-primary' };
+    } else {
+      return { text: 'Sleep', class: 'text-purple-300' };
+    }
+  }
+
+  function formatTime(baseH, delta) {
+    let total = (baseH + delta) % 24;
+    if (total < 0) total += 24;
+    const period = total >= 12 ? 'PM' : 'AM';
+    const displayH = total === 0 ? 12 : (total > 12 ? total - 12 : total);
+    const padded = String(displayH).padStart(2, '0');
+    return {
+      formatted: padded + ':14 ' + period,
+      hour24: total
+    };
+  }
+
+  function updateScrubber(val) {
+    const delta = parseInt(val, 10);
+    if (badge) badge.textContent = 'Offset: ' + (delta >= 0 ? '+' : '') + delta + 'h' + (delta === 0 ? ' (Current)' : '');
+
+    const sfo = formatTime(baseHours.sfo, delta);
+    const lon = formatTime(baseHours.lon, delta);
+    const nyc = formatTime(baseHours.nyc, delta);
+    const tyo = formatTime(baseHours.tyo, delta);
+
+    if (sfoSim) sfoSim.textContent = sfo.formatted;
+    if (lonSim) lonSim.textContent = lon.formatted;
+    if (nycSim) nycSim.textContent = nyc.formatted;
+    if (tyoSim) tyoSim.textContent = tyo.formatted;
+
+    const sfoStat = getStatusTag(sfo.hour24);
+    if (sfoTag) { sfoTag.textContent = sfoStat.text; sfoTag.className = sfoStat.class; }
+
+    const lonStat = getStatusTag(lon.hour24);
+    if (lonTag) { lonTag.textContent = lonStat.text; lonTag.className = lonStat.class; }
+
+    const nycStat = getStatusTag(nyc.hour24);
+    if (nycTag) { nycTag.textContent = nycStat.text; nycTag.className = nycStat.class; }
+
+    const tyoStat = getStatusTag(tyo.hour24);
+    if (tyoTag) { tyoTag.textContent = tyoStat.text; tyoTag.className = tyoStat.class; }
+  }
+
+  if (slider) {
+    slider.addEventListener('input', function(e) {
+      updateScrubber(e.target.value);
+    });
+  }
+
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function() {
+      if (slider) {
+        slider.value = 0;
+        updateScrubber(0);
+      }
+    });
+  }
+})();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary shadow-[0_0_16px_rgba(76,215,246,0.25)]"><div class="h-20 px-gutter-mobile flex items-center justify-around"><a class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant transition-colors duration-200" data-path="alarms" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all duration-200 group-hover:text-primary"><span class="material-symbols-outlined text-[24px]">alarm</span></div><span class="font-label-sm text-label-sm tracking-wider uppercase mt-0.5">Alarms</span></a><a class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant transition-colors duration-200" data-path="timer" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all duration-200 group-hover:text-primary"><span class="material-symbols-outlined text-[24px]">hourglass_bottom</span></div><span class="font-label-sm text-label-sm tracking-wider uppercase mt-0.5">Timer</span></a><a class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant transition-colors duration-200" data-path="stopwatch" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all duration-200 group-hover:text-primary"><span class="material-symbols-outlined text-[24px]">timer</span></div><span class="font-label-sm text-label-sm tracking-wider uppercase mt-0.5">Stopwatch</span></a><a class="group flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant transition-colors duration-200" data-path="settings" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all duration-200 group-hover:text-primary"><span class="material-symbols-outlined text-[24px]">tune</span></div><span class="font-label-sm text-label-sm tracking-wider uppercase mt-0.5">Settings</span></a></div></nav><script>(function(){function updateClock(){var d=new Date();var h=String(d.getHours()).padStart(2,'0');var m=String(d.getMinutes()).padStart(2,'0');var el=document.getElementById('shell-clock');if(el)el.textContent=h+':'+m;}updateClock();setInterval(updateClock,1000);})();</script>
+
+</body></html>
